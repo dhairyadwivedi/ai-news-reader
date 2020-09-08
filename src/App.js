@@ -7,7 +7,7 @@ const alanKey =
   "507c67832cd473a456a87d83e1e474612e956eca572e1d8b807a3e2338fdd0dc/stage";
 
 export const App = () => {
-  const [newsArticles, setNewsArticles] = useState([1, 2, 3, 4, 5, 6, 6]);
+  const [newsArticles, setNewsArticles] = useState([]);
   useEffect(() => {
     alanBtn({
       key: alanKey,
