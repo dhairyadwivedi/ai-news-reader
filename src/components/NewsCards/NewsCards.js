@@ -7,14 +7,14 @@ import useStyles from "./styles.js";
 export const infoCards = [
   { color: "#272643", title: "Latest News", text: "Get me the latest news" },
   {
-    color: "#6EC6A7",
+    color: "#8dd530",
     title: "News by Categories",
     info:
       "Business, Entertainment, General, Health, Science, Sports, Technology",
     text: "Get me the latest Technology news",
   },
   {
-    color: "#ff0000",
+    color: "#f46591",
     title: "News by Terms",
     info: "Bitcoin, PlayStation 5, Smartphones, Donald Trump...",
     text: "What's up with PlayStation 5",
@@ -32,34 +32,18 @@ export const NewsCards = ({ articles }) => {
   if (!articles.length) {
     return (
       <Grow in>
-        <Grid
-          classname={classes.container}
-          container
-          alignItems="stretch"
-          spacing={3}
-        >
-          {infoCards.map((infoCard) => (
-            <Grid item xs={12} sm={4} lg={3} className={classes.infoCard}>
-              <div
-                className={classes.card}
-                style={{ backgroundColor: infoCard.color }}
-              >
-                <Typography variant="h5">{infoCard.title}</Typography>
-                {infoCard.info ? (
-                  <Typography variant="h6">
-                    <strong>{infoCard.title.split(" ")[2]} </strong>
-                    <br />
-                    {infoCard.info}
-                  </Typography>
-                ) : null}
-                <Typography variant="h6">
-                  Try saying: <i>{infoCard.text}</i>
-                </Typography>
-              </div>
-            </Grid>
-          ))}
-        </Grid>
-      </Grow>
+      <Grid className={classes.container} container alignItems="stretch" spacing={3}>
+        {infoCards.map((infoCard) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCard}>
+            <div className={classes.card} style={{ backgroundColor: infoCard.color }}>
+              <Typography variant="h5" component="h5">{infoCard.title}</Typography>
+              {infoCard.info ? <Typography variant="h6" component="h6"><strong>{infoCard.title.split(' ')[2]}</strong>: <br />{infoCard.info}</Typography> : null}
+              <Typography variant="h6" component="h6">Try saying: <br /> <i>{infoCard.text}</i></Typography>
+            </div>
+          </Grid>
+        ))}
+      </Grid>
+    </Grow>
     );
   }
   return (
