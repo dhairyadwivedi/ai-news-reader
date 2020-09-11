@@ -1,4 +1,3 @@
-  
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
@@ -55,23 +54,19 @@ export default makeStyles((theme) => ({
     },
   },
   logoContainer: {
-    padding: '0 5%',
+    padding: '3% 5%',
     display: 'flex',
-    justifyContent: 'space-around',
+    flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     width: '100%',
-    [theme.breakpoints.down('sm')]: {
-      flexDirection: 'column-reverse',
-      textAlign: 'center',
-    },
+    fontSize: '1.3em'
+
   },
   alanLogo: {
-    height: '27vmin',
+    height: '50px',
     borderRadius: '15%',
-    padding: '0 5%',
+    marginRight: '20px',
     margin: '3% 0',
-    [theme.breakpoints.down('sm')]: {
-      height: '35vmin',
-    },
   },
 }));

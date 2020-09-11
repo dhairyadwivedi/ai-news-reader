@@ -1,42 +1,19 @@
-#root, html, body{
+#root, html, body {
     height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
 }
 
-body{
-    width: 100vw;
+body {
     margin: 0;
-    background-color: #121212;
+    background-color: #E3E8FF;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 .app{
-    width: 90%;
-    margin: 0 auto;
-}
-.logoContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    color: white;
-    padding: 10px 5px;
-    margin-bottom: 5%;
-    margin-top: 10px;
-}
-.logo{
-    width: 100px;
-    height: 100px;
-}
-.logoText{
-    font-size: 2rem;
-    padding: 10px;
+    background-color:#E3E8FF;
 }
