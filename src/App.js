@@ -7,8 +7,9 @@ import { Typography } from "@material-ui/core";
 import logo from "./assets/alan-logo.png";
 import useStyles from "./styles";
 
-const alanKey =
-  "507c67832cd473a456a87d83e1e474612e956eca572e1d8b807a3e2338fdd0dc/stage";
+
+const alanKey = process.env.REACT_APP_KEY;
+console.log(alanKey)
 
 export const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
@@ -30,7 +31,9 @@ export const App = () => {
               : number;
           const article = articles[parseNumber - 1];
           if (parseNumber > 20) {
-            alanBtn().playText("Please make sure to say a number less than 20.");
+            alanBtn().playText(
+              "Please make sure to say a number less than 20."
+            );
           } else if (article) {
             window.open(article.url, "_blank");
             alanBtn().playText("Opening article...");

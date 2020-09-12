@@ -11,7 +11,6 @@ import {
 import classNames from "classnames";
 
 import useStyles from "./styles";
-import NewsPlaceholder from "../../assets/news-placeholder.png";
 
 export const NewsCard = ({
   article: { description, publishedAt, title, source, url, urlToImage },
