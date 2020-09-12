@@ -9,7 +9,6 @@ import useStyles from "./styles";
 
 
 const alanKey = process.env.REACT_APP_KEY;
-console.log(alanKey)
 
 export const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
