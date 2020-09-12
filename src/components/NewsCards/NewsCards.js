@@ -6,7 +6,7 @@ import useStyles from "./styles.js";
 import Reader from "../../assets/reader.png"
 
 export const infoCards = [
-  { color: "#ffffff", title: "Latest News", text: "Get me the latest news" },
+  { color: "#ffffff", title: "Latest News | Weather", text: "Get me the latest news or What's the weather like in Berlin" },
   {
     color: "#ffffff",
     title: "News by Categories",
@@ -37,7 +37,7 @@ export const NewsCards = ({ articles, activeArticle }) => {
           <Grid item xs={12} sm={6} md={4} lg={3} className={classes.infoCard}>
             <div className={classes.card} style={{ backgroundColor: infoCard.color }}>
               <Typography className={classes.title}>{infoCard.title}</Typography>
-              {infoCard.title === "Latest News" ? <img className={classes.reader} src={Reader}  alt="reader"/> : null}
+              {infoCard.title === "Latest News | Weather" ? <img className={classes.reader} src={Reader}  alt="reader"/> : null}
               {infoCard.info ? <Typography className={classes.description}><strong>{infoCard.title.split(' ')[2]}</strong>: <br />{infoCard.info}</Typography> : null}
               <Typography className={classes.bottomText}><strong>Try saying:</strong> <br /> <i>{infoCard.text}</i></Typography>
             </div>

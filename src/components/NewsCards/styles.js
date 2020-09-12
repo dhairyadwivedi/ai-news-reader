@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    alignItems: "",
+    alignItems: "left",
     width: "100%",
     height: "45vh",
     padding: "6%",
