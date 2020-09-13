@@ -1,4 +1,21 @@
-Voice-controlled news as well as weather reporter. 
+# Voice-controlled News Reporter
+In addition to news, you can also ask for weather.
+
+## Voic Commands
+For news
+`Get me the latest news`
+
+For weather (make sure to say a city name)
+`What's the weather like in Berlin` 
+
+For news on a particular topic
+`Get me the news on ${topicName}`
+
+For news on a particular category (the categories are mentoned in the card on the homepage)
+`Get me the news on ${categoryName}`
+
+To open a particular article 
+`Open article ${articleNumber}`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
