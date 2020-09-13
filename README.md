@@ -1,3 +1,5 @@
+Voice-controlled news as well as weather reporter. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -8,6 +10,8 @@ In the project directory, you can run:
 Installs all the dependencies required to run the project.
 
 ### `npm start`
+
+To run the project, add your [Alan AI](https://alan.app/) API key in the App.js file.
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
