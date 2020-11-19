@@ -1,14 +1,17 @@
 # Voice-controlled News Reporter
+
 In addition to news, you can also ask for weather.
+A live version of the application can be found here - [Live](https://voice-news-reader.netlify.app)
 
 ## Voice Commands
+
 For news:
 
 `Get me the latest news`
 
 For weather (make sure to say a city name):
 
-`What's the weather like in Berlin` 
+`What's the weather like in Berlin`
 
 For news on a particular topic:
 
@@ -22,12 +25,12 @@ To open a particular article :
 
 `Open article ${articleNumber}`
 
-
 ## Available Scripts
 
 In the project directory, you can run:
 
-## `npm install`
+### `npm install`
+
 Installs all the dependencies required to run the project.
 
 ### `npm start`
